@@ -785,6 +785,71 @@ Lorem ipsum dolor text....
   <body>
 
     <!--form-->
-    
-</body>
+    <form action="/action_page.php">
+        <div class="mb-3 mt-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+        <div class="mb-3">
+          <label for="pwd" class="form-label">Password:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+        </div>
+        <div class="form-check mb-3">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="remember"> Remember me
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+      <!--select menu-->
+      <select class="form-select">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+
+      <!--radio select-->
+</body><div class="form-check">
+    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Option 1
+    <label class="form-check-label" for="radio1"></label>
+  </div>
+  <div class="form-check">
+    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Option 2
+    <label class="form-check-label" for="radio2"></label>
+  </div>
+  <div class="form-check">
+    <input type="radio" class="form-check-input" disabled>Option 3
+    <label class="form-check-label"></label>
+  </div>
 </html>
+
+<!--range-->
+<input type="range" class="form-range" >
+
+<!--form floating-->
+<div class="form-floating mb-3 mt-3">
+    <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+    <label for="email">Email</label>
+  </div>
+  
+  <div class="form-floating mt-3 mb-3">
+    <input type="text" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+    <label for="pwd">Password</label>
+  </div>
+
+<!--form validate-->
+<form action="/action_page.php" class="was-validated">
+    <div class="mb-3 mt-3">
+      <label for="uname" class="form-label">Username:</label>
+      <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div><div class="mb-3 mt-3">
+        <label for="pwd" class="form-label">password:</label>
+        <input type="text" class="form-control" id="pwd" placeholder="Enter password" name="pwd" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+    </form>
