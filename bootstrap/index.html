@@ -855,4 +855,168 @@ Lorem ipsum dolor text....
     </form>
 
 
+
+
     <h1>hello world</h1>
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      </div>
+      
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="C:\Users\AIIM\Desktop\gitworks\fullstack\assets\virudhunagar.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+        </div>
+        <div class="carousel-item">
+          <img src="C:\Users\AIIM\Desktop\gitworks\fullstack\assets\sivakasi.jpg" alt="Chicago" class="d-block" style="width:100%">
+        </div>
+        <div class="carousel-item">
+          <img src="C:\Users\AIIM\Desktop\gitworks\fullstack\assets\srivi.jpg" alt="New York" class="d-block" style="width:100%">
+        </div>
+      </div>
+      
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    
+    <div class="container-fluid mt-3">
+      <h3>Carousel Example</h3>
+      <p>The following example shows how to create a basic carousel with indicators and controls.</p>
+    </div>
+
+<!--scrollbar and click nav item to move that respective content-->
+    <div data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+      <nav class="navbar navbar-expand-sm fixed-top ">
+          <ul class="navbar-nav">
+          <li class="nav-item" ><a href="#section1">Section1</a></li>
+          <li class="nav-item"><a href="#section2">Section2</a></li>
+          <li class="nav-item"><a href="#section3">Section3</a></li>
+
+          </ul>
+        </nav>
+
+          <div id="section1" class="bg-secondary text-white " style="padding:100px 20px">
+            <p>hello this is a section of section1</p>
+          </div>
+          <div id="section2" class="bg-primary text-dark" style="padding:100px 20px">
+            <p>hello this is a section of section2</p>
+          </div> 
+           <div id="section3" class="bg-success text-white" style="padding:100px 20px">
+            <p>hello this is a section of section3</p>
+          </div>
+    </div>
+
+<!---offcanvas bar-->
+<div class="offcanvas offcanvas-start" id="demo1">
+<div class="offcanvas-header">
+  <div class="offcanvas-title">About me</div>
+  <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div clas="offcanvas-body ml-10">
+    <ul class="list-group ">
+      <li class="list-item "><a href="" class="nav-link text-primary text-hover">Education</a></li>
+      <li class="list-item"><a href="" class="nav-link text-primary">Services</a></li>
+      <li class="list-item"><a href="" class="nav-link text-primary">Projects</a></li>
+
+          </ul>
+          <button class="btn-secondary" type="button">Resume</button>
+  </div>
+</div>
+
+
+<div class="container-md">
+  <h1>Portfolio</h1>
+  <button type="button" class="bg-secondary" data-bs-toggle="offcanvas" data-bs-target="#demo1">Aboutme</button>
+</div>
+
+<!--utilitties-->
+<!--ratio for some frame external elements-->
+<center><h2>Screen resolution</h2></center>
+<div class="container-sm">
+  <div class="ratio ratio-1x1">
+    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+  </div><br>
+  <div class="ratio ratio-4x3">
+    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+  </div><br>
+  <div class="ratio ratio-16x9">
+    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+  </div><br>
+  <div class="ratio ratio-21x9">
+    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+  </div><br>
+  </div>
+
+ <!--use data-bs-theme="dark or white" to page fully color changed-->
+  
+
+<!--dropdown-->
+<div class="dropdown" data-bs-theme="dark">
+<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" >Services </button>
+<ul class="dropdown-menu">
+  <li><a class="dropdown-item">Webdevelopment</a></li>
+  <li><a class="dropdown-item">mobiledevelopment</a></li>
+  <li><a class="dropdown-item">data analytics</a></li>
+  <li><a class="dropdown-item">Front end developement</a></li>
+
+</ul>
+
+</div>
+
+<!--display contents flex,block,inline-flex,inline-block,.flex-column,.block-row-->
+<!--inline flex or flex row-->
+<h2>flex row</h2>
+
+<div class="d-flex flex-row justify-content-center bg-secondary">
+  <div class="p-2 flex-fill bg-info ">flex1</div>
+  <div class="p-2 flex-fill bg-secondary">flex2</div>
+  <div class="p-2 flex-fill bg-danger">flex3</div>
+
+</div>
+<br><br>
+<h2>flex column</h2>
+<!--flex column-->
+<div class="d-flex flex-column bg-secondary">
+  <div class="p-2  bg-info ">flex1</div>
+  <div class="p-2 bg-secondary">flex2</div>
+  <div class="p-2 bg-danger">flex3</div>
+
+</div>
+
+<!--inline block or block row-->
+<h2>block </h2>
+<div class="d-block  justify-content-between bg-success">
+  <div class="d-inline  bg-info ">flex1</div>
+  <div class="d-inline  bg-secondary">flex2</div>
+  <div class="d-inline  bg-danger">flex3</div>
+
+</div>
+<!--cloumn block -->
+<h2>block </h2>
+<div class="d-block  bg-success">
+  <div class="p-2 bg-info ">flex1</div>
+  <div class="p-2 bg-secondary">flex2</div>
+  <div class="p-2 bg-danger">flex3</div>
+
+</div>
+
+<br><br>
+
+
+<!---To learn more about flex properties then visit below page-->
+
+<h3>To learn more about flex properties then visit below page</h3>
+<div class="container-sm">
+<a class="btn btn-info" href="https://www.w3schools.com/bootstrap5/bootstrap_flex.php">Display-flex</a>
+</div>
+<br><br><br>
